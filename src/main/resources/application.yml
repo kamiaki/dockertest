@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://mysql56:3306/dockertest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql://192.168.80.130:6666/dockertest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 666666
+  jpa:
+    database: MySQL
+    properties:
+      hibernate:
+        hbm2ddl:
+          # update 自动创建表
+          auto: update
+        #方言
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
