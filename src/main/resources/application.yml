@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://mysql56:3306/dockertest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
-    url: jdbc:mysql://192.168.80.130:6666/dockertest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql://mysql56:3306/dockertest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+#    url: jdbc:mysql://192.168.80.130:6666/dockertest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
     username: root
     password: 666666
   jpa:
